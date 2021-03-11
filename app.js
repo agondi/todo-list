@@ -12,7 +12,8 @@ app.use(bodyParser.urlencoded({extended:true}));
 app.use(express.static(__dirname + '/public'));
 // app.use(express.static("public"));
 
-mongoose.connect("mongodb+srv://adminAG:08102006@cluster0.oerpy.mongodb.net/todolistDB", {useNewUrlParser:true});
+//Enter Password here
+mongoose.connect("mongodb+srv://adminAG:<PASSWORD>@cluster0.oerpy.mongodb.net/todolistDB", {useNewUrlParser:true});
 
 const itemsSchema = {
 	name:String
